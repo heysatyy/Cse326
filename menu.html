@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#menu {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    
+    #menu h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .menu-item {
+        background-color: #fff;
+        padding: 20px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    
+    .menu-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .menu-item h3 {
+        color: #7b3e19;
+        font-size: 1.5rem;
+    }
+    
+    .menu-item span {
+        font-size: 1.2rem;
+        color: #333;
+    }
+    body{
+        background-color: burlywood;
+    }
+    #menu{
+        background-color: burlywood;
+    }
+</style>
+</head>
+<body>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Rich and bold espresso shot.</p>
+                <a href="Espresso.html">
+                    <img src="espresso.jpg" alt="espresso coffee" width="120" height="150">
+                </a><br>
+                <span>₹499</span>
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Classic espresso with steamed milk and foam.</p>
+                <a href="Cappuccino.html">
+                    <img src="cappuccino.jpg" alt="Cappuccino coffee" width="120" height="150">
+                </a><br>
+                <span>₹199</span>
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Espresso with steamed milk for a smooth taste.</p>
+                <a href="latte.html">
+                    <img src="latte.jpeg" alt="Latte coffee" width="120" height="150">
+                </a><br>
+                <span>₹299</span>
+            </div>
+            <div class="menu-item">
+                <h3>Mocha</h3>
+                <p>Espresso mixed with chocolate and milk.</p>
+                <a href="mocha.html">
+                    <img src="mocha.jpeg" alt="Mocha coffee" width="120" height="150">
+                </a><br>
+                <span>₹250</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

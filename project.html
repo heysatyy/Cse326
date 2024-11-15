@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color:burlywood;
+        }
+        .logo{
+            text-align: center;
+        }
+          .section{  
+            align-items: center;      
+            height: 200px;            
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Hero Section -->
+    <section class="hero">
+    <strong><h1>Welcome to Coffee Heaven</h1></strong>
+    </section>
+    <div class="logo"><img src="logo.jpeg" alt="logo" width="450" height="350"></div> <br><br>
+        <nav>
+            <ul>
+                <li><a href="about.html"><button type="submit" class="btn">About</button></a></li>
+                <li><a href="menu.html"><button type="submit" class="btn">Menu</button></a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h2><big>Experience the Best Coffee in Town</big></h2>
+            <p><big>Crafted with passion, served with love.</big></p>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section id="story" class="section" align="center">
+        <h2><big>Our Story</big></h2>
+        <p><big>Discover the journey of Coffee Heaven, where every cup of coffee is a heavenly experience, crafted with love and passion.</big></p>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section" align="center">
+        <h2><big>Our Locations</big></h2>
+        <p><big>Find a Coffee Heaven near you to experience our cozy atmosphere and delicious coffee.</big></p>
+    </section><br>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Feedback</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+   <!-- Contact Us Section -->
+   <section class="section">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Get in touch with us for any questions or feedback.</p><br>
+    <a href="mailto:satyamkundan007@gmail.com" class="btn" >Email Us</a>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Coffee Heaven. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to handle form submission
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get form values
+            const name = document.getElementById("name").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            // Get the confirmation div
+            const confirmationDiv = document.getElementById("confirmation");
+
+            if (name && message) {
+                confirmationDiv.innerHTML = "Thank you for your feedback, " + name + "!";
+                confirmationDiv.style.color = "green"; // Style confirmation text
+                document.getElementById("feedbackForm").reset();
+            } else {
+                confirmationDiv.innerHTML = "Please fill out both fields before submitting.";
+                confirmationDiv.style.color = "red"; // Style error text
+            }
+        });
+    </script>
+</body>
+</html>
